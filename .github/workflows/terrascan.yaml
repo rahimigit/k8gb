@@ -1,14 +1,8 @@
 name: Terrascan
 
 on:
-  push:
-    paths:
-     - 'chart/k8gb/**'
-  pull_request:
-    branches:
-      - master
-    paths:
-     - 'chart/k8gb/**'
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   terrascan:

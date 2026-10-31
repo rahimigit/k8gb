@@ -1,9 +1,8 @@
 name: Offline Changelog
 
 on:
-  release:
-    types:
-      - published
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   chanagelog-pr:
